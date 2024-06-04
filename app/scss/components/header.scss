@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: rem(36);
+
   @include breakpoint(medium) {
     justify-content: space-between;
     align-items: center;
@@ -18,7 +19,5 @@
     font-size: rem(14);
     font-weight: 700;
     color: var(--dark-text1);
-  }
-  &__toggle {
   }
 }
