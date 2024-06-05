@@ -21,6 +21,12 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  transition: background 150ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--dark-card-hover);
+  }
 
   &--facebook {
     border-top: rem(5) solid var(--facebook);
@@ -36,9 +42,9 @@
       width: 100%;
       background: linear-gradient(
         225deg,
-        var(--instagram-start),
-        var(--instagram-middle),
-        var(--instagram-end)
+        var(--instagram-end),
+        var(--instagram-middle) 50.91%,
+        var(--instagram-start) 100%
       );
       position: absolute;
       display: block;
@@ -56,6 +62,10 @@
     margin-top: rem(5);
     margin-bottom: rem(28);
     height: rem(20);
+  }
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: bold;
   }
   &__icon {
     margin-right: rem(8);
@@ -77,6 +87,7 @@
       font-size: rem(56);
     }
     &--small {
+      font-size: rem(32);
     }
   }
 

@@ -1,1 +1,1 @@
-"use strict";console.log("Hello");//# sourceMappingURL=script.js.map
+"use strict";document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector('label[for="dark"]'),t=document.querySelector("#dark"),c=document.querySelector("#light");e&&e.addEventListener("click",(function(e){e.preventDefault(),t.checked?c.checked=!0:t.checked=!0}))}));//# sourceMappingURL=script.js.map
