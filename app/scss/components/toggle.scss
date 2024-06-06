@@ -9,10 +9,11 @@
 
   label {
     font-size: rem(14);
+    color: var(--toggle);
+    font-weight: bold;
     &[for="dark"] {
       line-height: rem(24);
       margin-right: rem(13);
-      font-weight: bold;
     }
   }
   &__wrapper {
@@ -28,7 +29,7 @@
 
     &:active ~ .toggle__button {
       border: 2px solid white;
-      transition: border 0.3s ease, border-color 0.3s ease 0.3s;
+      transition: border 0.3s ease, border-color 0.3s ease 20s;
     }
   }
 
@@ -39,11 +40,7 @@
     width: 100%;
     top: 0;
     border-radius: rem(12);
-    background: linear-gradient(
-      225deg,
-      var(--toggle-bg-dark-end) 0%,
-      var(--toggle-bg-dark-start) 98.82%
-    );
+    background: var(--toggle-bg);
     pointer-events: none;
   }
 
@@ -55,7 +52,7 @@
     width: rem(18);
     height: rem(18);
     border-radius: 50%;
-    background-color: var(--dark-bg);
+    background-color: var(--toggle-button);
     transition: all 150ms ease-in-out;
   }
 

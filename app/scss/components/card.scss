@@ -13,8 +13,8 @@
   }
 }
 .card {
-  background: var(--dark-card);
-  color: var(--dark-text1);
+  background: var(--card-bg);
+  color: var(--subtitle-color);
   flex: auto;
   padding: rem(25);
   border-radius: rem(5);
@@ -25,7 +25,7 @@
   cursor: pointer;
 
   &:hover {
-    background: var(--dark-card-hover);
+    background: var(--card-hover);
   }
 
   &--facebook {
@@ -78,7 +78,7 @@
     margin-bottom: rem(25);
   }
   &__count {
-    color: var(--dark-text2);
+    color: var(--text-color);
     font-weight: bold;
     line-height: 1;
     letter-spacing: rem(-2);
